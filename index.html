@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>サポート - QDBase</title>
-    <style>
+    <<style>
         * {
             margin: 0;
             padding: 0;
@@ -12,107 +12,144 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-            line-height: 1.8;
+            /* 背景は落ち着いた薄いグレーに変更 */
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Arial, sans-serif;
+            line-height: 1.7;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
+            background-color: #f5f7f9;
+            padding: 40px 20px;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 760px;
             margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            background: #ffffff;
+            padding: 60px;
+            /* 装飾的なシャドウを抑えてフラットに */
+            border: 1px solid #e1e8ed;
+            border-radius: 4px;
         }
         
         h1 {
-            color: #667eea;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            /* ネイビーを基調にしたタイトル */
+            color: #1a2a4c;
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 8px;
             text-align: center;
         }
-        
+    
         .app-name {
             text-align: center;
-            color: #666;
-            font-size: 1.2em;
+            color: #888;
+            font-size: 14px;
             margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #f0f0f0;
+            letter-spacing: 0.1em;
         }
-        
+    
         h2 {
-            color: #764ba2;
-            font-size: 1.8em;
-            margin: 40px 0 20px 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #f0f0f0;
-        }
-        
-        p {
+            /* セクション区切りをはっきりと */
+            color: #1a2a4c;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 45px;
             margin-bottom: 20px;
-            text-align: justify;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #1a2a4c;
         }
-        
+    
+        h3 {
+            /* FAQの質問部分：少しだけ青みを残して視認性を確保 */
+            color: #2c3e50;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+        }
+    
+        p {
+            font-size: 14px;
+            margin-bottom: 16px;
+            color: #444;
+        }
+    
         .contact-info {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
+            /* 連絡先ボックス：背景を薄いグレーにして落ち着かせる */
+            background: #f9f9f9;
+            border: 1px solid #e1e8ed;
+            padding: 24px;
+            margin: 24px 0;
+            border-radius: 4px;
         }
-        
+    
         .contact-info p {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
+            font-size: 14px;
         }
         
+        /* リンクの装飾 */
         a {
-            color: #667eea;
-            text-decoration: none;
-            border-bottom: 1px solid #667eea;
-            transition: all 0.3s;
+            color: #1a2a4c;
+            text-decoration: underline;
+            transition: opacity 0.2s;
         }
         
         a:hover {
-            color: #764ba2;
-            border-bottom-color: #764ba2;
+            opacity: 0.7;
         }
         
+        /* 下部の規約リンクボタン */
         .links {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #f0f0f0;
+            margin-top: 50px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
         
         .links a {
             display: inline-block;
-            margin: 0 15px;
-            padding: 10px 20px;
-            background: #667eea;
+            padding: 12px 24px;
+            background: #1a2a4c;
             color: white;
-            border: none;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: all 0.3s;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background-color 0.2s;
         }
         
         .links a:hover {
-            background: #764ba2;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+            background: #2c3e50;
         }
         
         .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
             text-align: center;
-            color: #666;
-            font-size: 0.9em;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 12px;
+        }
+    
+        @media (max-width: 600px) {
+            body {
+                padding: 0;
+            }
+            .container {
+                padding: 40px 20px;
+                border: none;
+                border-radius: 0;
+            }
+            .links {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .links a {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -141,26 +178,27 @@
         
         <h3 style="color: #667eea; margin-top: 30px;">Q1. データが消えてしまいました</h3>
         <p>
-            <strong>ゲストモード：</strong>データは端末内に保存されています。アプリを削除すると消えます。<br>
-            <strong>アカウント登録済み：</strong>クラウドに同期されています。再ログインしてください。
+            データは端末内に保存されています。<br>
+            アプリの削除、端末故障、端末紛失、機種変更を行うとデータが失われる場合があります。<br>
+            必要に応じて、定期的にエクスポート機能でバックアップしてください。
         </p>
         
         <h3 style="color: #667eea; margin-top: 30px;">Q2. 機種変更時のデータ移行方法は？</h3>
         <p>
-            アカウント登録している場合、新しい端末で同じアカウントでログインすれば、
-            自動的にデータが同期されます。ゲストモードのデータは移行できません。
+            当アプリが出力したCSVファイルを使って、練習記録（的中・射数関連）のみ引き継ぎできます。<br>
+            カレンダー予定などのデータは、CSVインポートの対象外です。
         </p>
         
-        <h3 style="color: #667eea; margin-top: 30px;">Q3. アカウントを削除したい</h3>
+        <h3 style="color: #667eea; margin-top: 30px;">Q3. 端末内データを削除したい</h3>
         <p>
-            アプリ内の「設定」→「アカウント削除」から削除できます。
+            アプリ内の「設定」から削除できます。
             削除すると、すべてのデータが完全に削除され、復元できませんのでご注意ください。
         </p>
         
         <h3 style="color: #667eea; margin-top: 30px;">Q4. パスワードを忘れました</h3>
         <p>
-            ログイン画面の「パスワードをお忘れですか？」からリセットできます。
-            登録されたメールアドレス宛にリセットリンクが送信されます。
+            現在、メールアドレスとパスワードによる認証は提供していません。<br>
+            ログイン機能は廃止されています。
         </p>
         
         <h2>🔒 プライバシーとセキュリティ</h2>
@@ -175,8 +213,8 @@
         </div>
         
         <div class="footer">
-            <p>© 2025 QDBase（個人開発）</p>
-            <p>最終更新日：2025年11月3日</p>
+            <p>© 2026 QDBase</p>
+            <p>最終更新日：2026年4月29日</p>
         </div>
     </div>
 </body>

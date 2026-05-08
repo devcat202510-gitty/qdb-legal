@@ -12,116 +12,112 @@
         }
         
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
+            /* 背景はシンプルに。Appleのドキュメントのような清潔感 */
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Arial, sans-serif;
+            line-height: 1.7;
+            color: #1a1a1a;
+            background-color: #f5f7f9;
+            padding: 40px 20px;
         }
         
         .container {
-            max-width: 800px;
+            max-width: 760px;
             margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            background: #ffffff;
+            padding: 60px;
+            /* シャドウを薄くしてフラットに見せる */
+            border: 1px solid #e1e8ed;
+            border-radius: 4px;
         }
         
         h1 {
-            color: #667eea;
-            font-size: 2em;
-            margin-bottom: 10px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid #667eea;
+            /* QDBaseのネイビーを基調に */
+            color: #1a2a4c;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            text-align: center;
         }
         
         .last-updated {
-            color: #666;
-            font-size: 0.9em;
-            margin-bottom: 30px;
+            color: #888;
+            font-size: 13px;
+            text-align: center;
+            margin-bottom: 40px;
+            display: block;
         }
         
         h2 {
-            color: #764ba2;
-            font-size: 1.5em;
-            margin-top: 35px;
-            margin-bottom: 15px;
-            padding-left: 15px;
-            border-left: 4px solid #764ba2;
+            color: #1a2a4c;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #1a2a4c; /* 線を太くして硬派に */
         }
         
         h3 {
-            color: #555;
-            font-size: 1.2em;
-            margin-top: 25px;
-            margin-bottom: 12px;
+            font-size: 15px;
+            font-weight: 700;
+            margin-top: 24px;
+            margin-bottom: 10px;
+        }
+        
+        p, li {
+            font-size: 14px;
+            color: #333;
         }
         
         p {
-            margin-bottom: 15px;
-            text-align: justify;
+            margin-bottom: 16px;
         }
         
         ul {
-            margin-left: 30px;
-            margin-bottom: 15px;
+            margin-left: 20px;
+            margin-bottom: 20px;
         }
         
         li {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
+        }
+        
+        .important {
+            /* 警告色もトーンを落とす */
+            background: #fafafa;
+            border: 1px solid #d1d1d1;
+            padding: 20px;
+            margin: 24px 0;
         }
         
         .contact-box {
-            background: #f8f9fa;
-            border-left: 4px solid #667eea;
-            padding: 20px;
-            margin-top: 30px;
-            border-radius: 8px;
-        }
-        
-        .contact-box strong {
-            color: #667eea;
+            background: #f9f9f9;
+            padding: 24px;
+            margin-top: 40px;
+            border-radius: 4px;
+            font-size: 14px;
         }
         
         a {
-            color: #667eea;
-            text-decoration: none;
-        }
-        
-        a:hover {
+            color: #1a2a4c;
             text-decoration: underline;
         }
         
         .footer {
             text-align: center;
             margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            color: #666;
-            font-size: 0.9em;
-        }
-        
-        .important {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
+            color: #999;
+            font-size: 12px;
         }
         
         @media (max-width: 600px) {
+            body {
+                padding: 0;
+            }
             .container {
-                padding: 20px;
-            }
-            
-            h1 {
-                font-size: 1.5em;
-            }
-            
-            h2 {
-                font-size: 1.2em;
+                padding: 30px 20px;
+                border: none;
+                border-radius: 0;
             }
         }
     </style>
@@ -129,7 +125,7 @@
 <body>
     <div class="container">
         <h1>利用規約</h1>
-        <p class="last-updated">最終更新日: 2025年11月1日</p>
+        <p class="last-updated">最終更新日: 2026年4月29日</p>
         
         <p>QDBase（以下「当アプリ」）をご利用いただきありがとうございます。本利用規約（以下「本規約」）は、当アプリの利用条件を定めるものです。当アプリをご利用いただくことで、本規約に同意したものとみなされます。</p>
         
@@ -141,37 +137,27 @@
             <li><strong>「コンテンツ」</strong>: ユーザーが作成した練習記録、予定などのデータ</li>
         </ul>
         
-        <h2>2. アカウント</h2>
-        
-        <h3>2.1 アカウント作成</h3>
+        <h2>2. データ保存と引き継ぎ</h2>
+
+        <h3>2.1 保存先</h3>
         <ul>
-            <li>アカウント作成には、有効なメールアドレスが必要です</li>
-            <li>13歳未満の方は、保護者の同意が必要です</li>
-            <li>1人につき1つのアカウントのみ作成できます</li>
+            <li>練習記録および設定情報は、原則として端末内に保存されます</li>
+            <li>ログイン機能は廃止されており、クラウド同期は行いません</li>
         </ul>
-        
-        <h3>2.2 アカウント管理</h3>
-        <ul>
-            <li>ユーザーは、自己のアカウント情報を適切に管理する責任があります</li>
-            <li>パスワードは第三者に開示しないでください</li>
-            <li>不正アクセスが疑われる場合は、直ちにご連絡ください</li>
-        </ul>
-        
-        <h3>2.3 アカウントの削除</h3>
+
+        <h3>2.2 データの削除</h3>
         <div class="important">
             <ul>
-                <li>ユーザーはいつでもアカウントを削除できます</li>
-                <li>アカウント削除後、すべてのデータは復元できません</li>
+                <li>ユーザーはいつでも端末内データを削除できます</li>
+                <li>削除後、データは復元できません</li>
             </ul>
         </div>
-        
-        <h3>2.4 ゲストモード</h3>
+
+        <h3>2.3 CSVによる引き継ぎ</h3>
         <ul>
-            <li>アカウント登録前に、ゲストモードでアプリを試用できます</li>
-            <li>ゲストモードのデータは端末にのみ保存されます（クラウド同期なし）</li>
-            <li>端末を変更すると、ゲストモードのデータは失われます</li>
-            <li>正式登録時に、ゲストデータの引き継ぎを選択できます</li>
-            <li>ゲストデータを引き継がない場合、端末から削除されます</li>
+            <li>当アプリが出力したCSVファイルを利用したデータ取り込みが可能です</li>
+            <li>引き継ぎ対象は練習記録（的中・射数関連）のみです</li>
+            <li>カレンダーの予定や対戦結果など、CSVに含まれないデータは引き継ぎできません</li>
         </ul>
         
         <h2>3. サービスの利用</h2>
@@ -194,7 +180,7 @@
         </ul>
         
         <h3>3.3 データのバックアップ</h3>
-        <p>データはクラウドに保存されますが、定期的にエクスポート機能を使用してバックアップすることを推奨します。</p>
+        <p>データは原則としてご利用端末内に保存されます。端末の故障・紛失・機種変更等に備え、定期的にエクスポート機能を使用してバックアップすることを推奨します。</p>
         
         <h2>4. コンテンツの所有権</h2>
         
@@ -219,7 +205,7 @@
         <p>以下の場合、サービスを中断または終了することがあります：</p>
         <ul>
             <li>システムメンテナンス</li>
-            <li>サーバーの障害</li>
+            <li>外部サービス（通知・解析等）の障害</li>
             <li>不可抗力（自然災害など）</li>
             <li>サービス終了の判断</li>
         </ul>
@@ -246,7 +232,7 @@
         
         <h3>6.3 データの損失</h3>
         <ul>
-            <li>サーバー障害やその他の理由によりデータが失われた場合、運営者は責任を負いません</li>
+            <li>端末故障、端末紛失、OS不具合、ユーザー操作その他の理由によりデータが失われた場合、運営者は責任を負いません</li>
             <li>定期的なバックアップを推奨します</li>
         </ul>
         
@@ -256,7 +242,7 @@
         
         <h2>8. 規約の変更</h2>
         
-        <p>運営者は、必要に応じて本規約を変更することがあります。変更後の規約は、アプリ内で通知した時点から効力を生じます。</p>
+        <p>運営者は、必要に応じて本規約を変更することがあります。</p>
         
         <h2>9. お問い合わせ</h2>
         
@@ -264,11 +250,11 @@
         
         <div class="contact-box">
             <p><strong>連絡先:</strong> inquiry202510@gmail.com</p>
-            <p><strong>運営者:</strong> QDBase（個人開発）</p>
+            <p><strong>運営者:</strong> QDBase</p>
         </div>
         
         <div class="footer">
-            <p>本利用規約は、2025年11月1日より有効です。</p>
+            <p>本利用規約は、2026年4月29日より有効です。</p>
             <p>当アプリをご利用いただくことで、本規約に同意したものとみなされます。</p>
         </div>
     </div>
